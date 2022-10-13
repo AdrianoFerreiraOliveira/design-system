@@ -5,7 +5,7 @@ import { ButtonHTMLAttributes, ReactNode } from 'react';
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     size?:'sm' |'md' |'lg';
     children: ReactNode;
-    asChild:boolean;
+    asChild?:boolean;
 }
 
 export function Button({children, asChild,className,...props}:ButtonProps){
